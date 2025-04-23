@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leeds Car Parks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="map_styles.css">
+</head>
+<body>
+    <div id="near-me" class="page">
+        <h1>Car parks near me</h1>
+        <div class="map-box">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4707.435515319566!2d-1.551345919108622!3d53.795038720353155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sleeds%20car%20parks!5e0!3m2!1sen!2suk!4v1713445828050!5m2!1sen!2suk" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    </div>
+
+    <div id="normal" class="page">
+        <h1>Car parks</h1>
+        <div class="map-box">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4707.435515319566!2d-1.551345919108622!3d53.795038720353155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sleeds%20car%20parks!5e0!3m2!1sen!2suk!4v1713445828050!5m2!1sen!2suk" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+        <div class="queries">
+            <div class="selection">
+                <h1>Find a parking space</h1>
+                <div class="buttons">
+                <button>
+                    <div class="info" id="query-title">
+                    <h3>West Street Car Park</h3>
+                    <h4>14 Reviews • 0.3 miles</h4>
+                    <h4>£7.00 per hour</h4>
+                    </div>
+                    <div class="bookmark">
+                        <!-- <i class="fa-solid fa-bookmark"></i> -->
+                        <i class="fa-regular fa-bookmark"></i>
+                    </div>
+                </button>
+            
+                <button>
+                    <div class="info" id="query-title">
+                    <h3>Leeds Parking Garage</h3>
+                    <h4>22 Reviews • 0.5 miles</h4>
+                    <h4>£5.50 per hour</h4>
+                    </div>
+                    <div class="bookmark">
+                        <i class="fa-solid fa-bookmark"></i>
+                    </div>
+                    
+                </button>
+            
+                </div>
+            </div>
+            <div class="selection">
+                <h1>Favourites</h1>
+                <div class="buttons">
+                    <button>
+                        <div class="info" id="query-title">
+                        <h3>Leeds Parking Garage</h3>
+                        <h4>22 Reviews • 0.5 miles</h4>
+                        <h4>£5.50 per hour</h4>
+                        </div>
+                        <div class="bookmark">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+    <div class="navbar">
+        <button class="home.navbar" onclick="location.href='index.html'">
+            <i class="fa-solid fa-house" class="nav-icon"></i>
+            <span>Home</span>
+        </button>
+
+        <button class="map-navbar" onclick="location.href='map.html'">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>Map</span> 
+        </button>
+
+        <button class="bookings-navbar" onclick="location.href='bookings.html'">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Bookings</span>
+        </button>
+
+        <button class="account-navbar" onclick="" id="account-button">
+            <i class="fa-solid fa-user-pen"></i>
+            <span>Account</span>
+        </button>
+    </div>
+
+
+    <div id="overlay" class="overlay">
+        <div class="overlay-box">
+          <p>aaa</p>
+          <button onclick="hideOverlay()">bye bye</button>
+        </div>
+      </div>
+      
+      
+
+    <script src="map.js"></script>
+    <script src="https://kit.fontawesome.com/9fee6bc438.js" crossorigin="anonymous"></script>
+</body>
+</html>

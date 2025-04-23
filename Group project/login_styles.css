@@ -1,0 +1,125 @@
+body{
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-box{
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 10px 10px 30px 10px rgba(0.2,0.2,0.2,0.3);
+  border: 3px solid #00000050;
+}
+
+.switch-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.switch-buttons button{
+  width: 48%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: rgb(60, 0, 172);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.switch-buttons button:hover{
+  background-color: rgb(60, 0, 172);
+}
+
+form{
+  display: none;
+  flex-direction: column;
+}
+
+form.active{
+  display: flex;
+}
+
+label{
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+input{
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button.submit-btn{
+  margin-top: 20px;
+  background-color: rgb(60, 0, 172);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.submit-btn:hover{
+  background-color: rgb(60, 0, 172);
+}
+
+.msg{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.page-title{
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 25vh;
+  color: #333;
+  top: 0;
+  position: absolute;
+}
+
+.tos{
+  font-size: 0.8rem;
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tos i{
+  font-size: 1.2rem;
+  margin-top: -10px;
+  margin-left: 3px;
+}
+
+.other-logins{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: row;
+  gap: 1em;
+
+}
+
+.other-logins i{
+  font-size: 2rem;
+  color: rgb(60, 0, 172);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}

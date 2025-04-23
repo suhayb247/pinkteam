@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="login_styles.css" />
+</head>
+<body>
+    <h1 class="page-title">Login or register</h1>
+  <div class="login-box">
+    <div class="switch-buttons">
+      <button onclick="showForm('login')">Login</button>
+      <button onclick="showForm('register')">Register</button>
+    </div>
+
+    <form id="login-form" class="active" onsubmit="return login()">
+        <label>Name</label>
+        <input type="text" id="login-name" required />
+
+        <label>Email</label>
+        <input type="email" id="login-email" required />
+
+        <label>Password</label>
+        <input type="password" id="login-password" required />
+
+        <button class="submit-btn" type="submit">Login</button>
+
+        <div class="tos">
+            <i class="fa-solid fa-check"></i>
+            <p>
+            By registering, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+            </p>
+        </div>
+    </form>
+
+
+
+    <form id="register-form" onsubmit="return registration()">
+        <label>Name</label>
+        <input type="text" id="reg-name" required />
+
+        <label>Email</label>
+        <input type="email" id="reg-email" required />
+
+        <label>Password</label>
+        <input type="password" id="reg-password" required />
+
+        <label>Car License Plate</label>
+        <input type="text" id="reg-plate" required />
+
+        <button class="submit-btn" type="submit">Register</button>
+
+        
+    </form>
+
+    
+    <div class="other-logins" id="other-logins">
+        <i class="fa-brands fa-google"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-apple"></i>
+    </div>
+
+
+    <div class="msg" id="message"></div>
+  </div>
+
+  
+
+  <script src="https://kit.fontawesome.com/9fee6bc438.js" crossorigin="anonymous"></script>
+  <script src="login.js"></script>
+</body>
+</html>
