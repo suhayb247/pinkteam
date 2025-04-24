@@ -69,7 +69,7 @@ iframe {
 }
   
 .selection button {
-    background: rgba(89, 0, 255, 0.082);
+    background: #d3e1f3;
     color: #000;
     border: 1px solid #000;
     border-radius: 20px;
@@ -117,7 +117,7 @@ iframe {
 }
 
 .favourites-button {
-    background: rgba(60, 0, 172, 0.616);
+    background: #1a0941;
     color: rgb(0, 0, 0);
     border: none;
     padding: 20px;
@@ -140,7 +140,7 @@ iframe {
 
 
 
-.navbar{
+.navbar {
     background-color: #f5f5f5;
     overflow: hidden;
     position: fixed;
@@ -154,16 +154,14 @@ iframe {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    height: 5vh;
-
-
-}
-
-.navbar button {
+    height: 7vh;
+  }
+  
+  .navbar button {
     background-color: #f5f5f5;
-    color: rgb(60, 0, 172);
+    color: #1a0941;
     border: none;
-    padding: 14px 20px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -172,13 +170,19 @@ iframe {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.navbar i{
-    font-size: 24px;
-    margin-bottom: 10px; 
-}
-
+  }
+  
+  .navbar i {
+    font-size: 22px;
+    margin-bottom: 1px;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
 

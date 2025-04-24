@@ -6,6 +6,7 @@
   <title>Profile Page</title>
   <link rel="stylesheet" href="profilepage.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9fee6bc438.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="profile-app">
@@ -63,12 +64,34 @@
       </div>
     </main>
 
-    <nav class="bottom-nav">
-      <a href="index.html"><i class="bi bi-house"></i><span>Home</span></a>
-      <a href="#"><i class="bi bi-search"></i><span>Search</span></a>
-      <a href="#"><i class="bi bi-calendar2-check"></i><span>Bookings</span></a>
-      <a href="#" class="active"><i class="bi bi-person"></i><span>Account</span></a>
-    </nav>
+    <div class="navbar">
+      <a href="index.html">
+        <button class="home-navbar">
+          <i class="fa fa-home"></i> 
+          <span>Home</span>
+        </button>
+      </a>
+      
+      <a href="map.html">
+        <button class="map-navbar">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <span>Map</span> 
+        </button>
+      </a>
+      
+      <a href="bookings.html">
+        <button class="bookings-navbar">
+          <i class="fa-solid fa-calendar-days"></i> 
+          <span>Bookings</span>
+        </button>
+      </a>
+    
+      <button class="account-navbar">
+        <i class="fa-solid fa-user-pen"></i> 
+        <span>Account</span>
+      </button>
+    </div>
+  </div>
   </div>
 
   <script src="profilepage.js"></script>
@@ -108,7 +131,7 @@
       <label><input type="radio" name="textSize" value="16" /> 16</label>
       <label><input type="radio" name="textSize" value="20" /> 20</label>
     </div>
-    <div class="logout">Logout</div>
+    <a href="login.html" class="logout">Logout</a>
   </div>  
 
  

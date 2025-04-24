@@ -8,6 +8,7 @@ body{
   margin: 0;
 }
 
+
 .login-box{
   background: white;
   padding: 30px;
@@ -17,6 +18,27 @@ body{
   border: 3px solid #00000050;
 }
 
+.profile-header {
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 2.8rem; 
+  font-weight: bold;
+  color: white; 
+  background-color: #1a0941; 
+  padding: 10px; 
+  border-radius: 10px;
+  width: 70px; 
+  height: 70px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
 .switch-buttons{
   display: flex;
   justify-content: space-between;

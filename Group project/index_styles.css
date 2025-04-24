@@ -5,7 +5,7 @@
     overflow-x: hidden;
 }
 
-.navbar{
+.navbar {
     background-color: #f5f5f5;
     overflow: hidden;
     position: fixed;
@@ -19,16 +19,14 @@
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    height: 5vh;
-
-
-}
-
-.navbar button {
+    height: 7vh;
+  }
+  
+  .navbar button {
     background-color: #f5f5f5;
     color: #1a0941;
     border: none;
-    padding: 14px 20px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -37,13 +35,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.navbar i{
-    font-size: 24px;
-    margin-bottom: 10px; 
-}
-
+  }
+  
+  .navbar i {
+    font-size: 22px;
+    margin-bottom: 1px;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 
 
@@ -115,11 +119,40 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.quick-actions button{
+.quick-actions button:hover{
+    background: #7baff3d0;
+    transition: background 0.5s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.quick-actions h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: rgb(107, 40, 233);
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3vh;
+}
+
+.quick-actions {
+    display: flex;
+    justify-content: space-evenly; 
+    margin-top: 5vh;
+    align-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translateX(-50%);
+    width: 60%; 
+}
+
+.quick-actions button {
     background: #d3e1f3;
     color: #1a0941;
     border: none;
-    padding: 20px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -131,47 +164,13 @@
     margin-top: 2vh;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    flex: 1; 
     margin: 0 10px; 
 }
-
-.quick-actions button:hover{
-    background: #6aa9fcd0;
-    transition: background 0.5s ease-in-out;
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
-}
-
-.quick-actions button i{
-    font-size: 25px;
-    margin-right: 10px;
-
-}
-
-.quick-actions h1{
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: rgb(60, 0, 172);
-    text-align: center;
-    font-weight: bold;
-    margin-top: 3vh;
-}
-
-.quick-actions{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 5vh;
-    align-items: center;
-    margin-left: 50%;
-    margin-right: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-}
-
 .page-title{
     font-size: 4.5em;
     margin-bottom: 5vh;
-    color: rgb(26, 10, 99);
+    color: rgb(18, 5, 75);
     text-align: center;
     font-weight: bold;
     margin-top: 3vh;
@@ -218,8 +217,29 @@
 }
 
 
+.no-underline {
+    text-decoration: none;
+}
 
-
+.no-underline {
+    text-decoration: none; 
+  }
+  
+  .help-button {
+    background-color: #1a0941;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block; 
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .help-button:hover {
+    background-color: #0d458d;
+  }
 .find-a-spot-button{
     background: rgba(7, 6, 54, 0.986);
     color: rgb(255, 255, 255);
@@ -227,7 +247,7 @@
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.3em;
     cursor: pointer;
     display: flex;
     flex-direction: row;
@@ -242,6 +262,10 @@
     width: 30%;
 }
 
+.find-a-spot-button i {
+    font-size: 1.3em; 
+    margin-left: 10px; 
+}
 
 .main-map{
     margin-right: 50%;

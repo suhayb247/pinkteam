@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome Home!</title>
     <link rel="stylesheet" href="index_styles.css">
+    <script src="profilepage.js" defer></script>
+
 </head>
 <body>
     <h1 class="page-title">Welcome </h1>
@@ -12,11 +14,10 @@
 
 
     <button class="find-a-spot-button">
+        <span>Search for Parking Spaces</span>
         <i class="fa-solid fa-magnifying-glass"></i>
-        <span>
-             Find a parking spot
-        </span>
     </button>
+    
     
     <iframe class="main-map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1551.2609022447323!2d-1.6075688187346724!3d53.82237452204022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scar%20park%20near%20Kirkstall%2C%20Leeds!5e0!3m2!1sen!2suk!4v1745455854870!5m2!1sen!2suk" 
         width="600" 
@@ -32,49 +33,62 @@
 
 
     <div class="quick-actions">
-        <button class="bookings">
-            <i class="fa-solid fa-calendar-days"></i>
-            <span>Bookings</span></button>
-        </button>
+        <a href="bookings.html" class="no-underline">
+            <button class="bookings">
+              <span>Bookings</span>
+            </button>
+        </a>
 
-        <button class="favourited-spots">
-            <i class="fa-solid fa-bookmark"></i>
-            <span>Favourited spots</span></button>
-        </button>
+        <a href="maps.html" class="no-underline">
+            <button class="favourited-spots">
+              <span>Saved spots</span>
+            </button>
+        </a>
 
 
-        <button class="help-button">
-            <i class="fa-solid fa-circle-question"></i>
-            <span>Help</span></button>
+        <a href="helpandsupport.html" class="no-underline">
+            <button class="help-button">
+              <span>Help</span>
+            </button>
+        </a>
 
-        <button class="settings-button">
-            <i class="fa-solid fa-gear"></i>
-            <span>Accessibility</span></button>
-        </button>
+        <a href="profilepage.html" class="no-underline">
+            <button class="settings-button">
+              <span>Settings</span>
+            </button>
+        </a>
     </div>
 
     
 
     <div class="navbar">
-        <button class="home.navbar">
-            <i class="fa-solid fa-house" class="nav-icon"></i>
+        <a href="index.html" class="nav-item">
+          <button class="home-navbar">
+            <i class="fa-solid fa-house"></i>
             <span>Home</span>
-        </button>
-
-        <button class="map-navbar">
+          </button>
+        </a>
+      
+        <a href="map.html" class="nav-item">
+          <button class="map-navbar">
             <i class="fa-solid fa-map-location-dot"></i>
-            <span>Map</span> 
-        </button>
-
-        <button class="bookings-navbar">
+            <span>Map</span>
+          </button>
+        </a>
+      
+        <a href="bookings.html" class="nav-item">
+          <button class="bookings-navbar">
             <i class="fa-solid fa-calendar-days"></i>
             <span>Bookings</span>
-        </button>
-
-        <button class="account-navbar" onclick="">
+          </button>
+        </a>
+      
+        <a href="profilepage.html" class="nav-item">
+          <button class="account-navbar">
             <i class="fa-solid fa-user-pen"></i>
             <span>Account</span>
-        </button>
+          </button>
+        </a>
     </div>
 
 
