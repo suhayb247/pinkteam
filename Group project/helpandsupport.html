@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help & Support</title>
+  <link rel="stylesheet" href="helpandsupport.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <div class="help-page">
+    <header class="help-header">
+      <i class="bi bi-arrow-left" id="backArrow"></i>
+      <h1>Help & Support</h1>
+    </header>
+
+    <section class="faq-section">
+      <h2>FAQs</h2>
+      <div class="faq">
+        <div class="faq-question">
+          <span>How do I cancel a booking?</span>
+          <i class="bi bi-chevron-down toggle-icon"></i>
+        </div>
+        <div class="faq-answer">
+          Go to Bookings &gt; Upcoming Bookings &gt; Cancel or Modify your booking reservation.
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq-question">
+          <span>Who do I contact for support?</span>
+          <i class="bi bi-chevron-down toggle-icon"></i>
+        </div>
+        <div class="faq-answer">
+          You can reach out to us through the Report an Issue form below or via our contact email.
+        </div>
+      </div>
+      <div class="faq">
+        <div class="faq-question">
+          <span>How do I reset my password?</span>
+          <i class="bi bi-chevron-down toggle-icon"></i>
+        </div>
+        <div class="faq-answer">
+          Go to the login screen and select "Forgot Password" to reset your password.
+        </div>
+      </div>
+    </section>
+
+    <section class="report-issue">
+      <h2>Report an Issue</h2>
+      <form id="issueForm">
+        <label for="bookingId">Booking ID</label>
+        <input type="text" id="bookingId" name="bookingId" required>
+
+        <label for="issueMessage">Message</label>
+        <textarea id="issueMessage" name="issueMessage" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+  <script src="helpandsupport.js"></script>
+</body>
+</html>
