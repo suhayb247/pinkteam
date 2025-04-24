@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
     background: #fff;
-    color: #2c1250;
+    color: #1a0941;
   }
   
   .help-page {
@@ -56,12 +56,12 @@ body {
   }
   
   .faq.open .toggle-icon::before {
-    content: "\f286"; /* Up arrow */
+    content: "\f286"; 
     font-family: 'bootstrap-icons';
   }
   
   .toggle-icon::before {
-    content: "\f282"; /* Down arrow */
+    content: "\f282"; 
     font-family: 'bootstrap-icons';
   }
   
@@ -80,7 +80,7 @@ body {
   }
   
   .report-issue button {
-    background: #2c1250;
+    background: #1a0941;
     color: white;
     padding: 10px;
     border: none;
