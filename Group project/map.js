@@ -20,4 +20,4 @@ document.getElementById("query-title").addEventListener("click", () => {
     function hideOverlay() {
     document.getElementById("overlay").style.display = "none"
     }
-      
+

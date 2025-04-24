@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    color: #1a0941;
     background: #f9f9f9;
     display: flex;
     flex-direction: column;
@@ -8,7 +9,7 @@ body {
     padding: 20px;
     width: 100%;
     height: 140vh;
-    overflow: hidden;
+    overflow: auto;
 
     
 }
@@ -70,10 +71,8 @@ iframe {
   
 .selection button {
     background: #d3e1f3;
-    color: #000;
-    border: 1px solid #000;
+    color: #1a0941;
     border-radius: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     padding: 15px 20px;
     font-size: 16px;
     display: flex;
@@ -118,7 +117,7 @@ iframe {
 
 .favourites-button {
     background: #1a0941;
-    color: rgb(0, 0, 0);
+    color: rgb(18, 19, 85);
     border: none;
     padding: 20px;
     text-align: center;
@@ -132,12 +131,11 @@ iframe {
     margin-top: 2vh;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-    border: 1px solid #000000;
 }
 
-
-
-
+* {
+    border: none;
+}
 
 
 .navbar {
@@ -185,6 +183,9 @@ iframe {
   }
 
 
+.underlined {
+    text-decoration: underline;
+}
 
 
 
@@ -207,15 +208,59 @@ iframe {
     border-radius: 10px;
   }
   
+  .carpark-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d3e1f3;
+    color: #1a0941;
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-size: 16px;
+    width: 100%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
 
+.carpark-button .info {
+    flex: 1; 
+}
 
+.carpark-button .icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
+.carpark-button .icons i {
+    font-size: 1.5rem;
+    color: #1a0941;
+}
 
+.carpark-button .bookmark {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 
+.carpark-button .icons i:hover,
+.carpark-button .bookmark i:hover {
+    color: #e34e2f;
+}
 
+.carpark-button .bookmark {
+    margin-left: 20px;
+}
 
+.carpark-button .icons i:hover {
+    color: #e34e2f;
+}
 
-
+.carpark-button .icons {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
 
 
   @media (max-width: 500px) {
