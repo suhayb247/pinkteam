@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manage Vehicle</title>
+  <link rel="stylesheet" href="manage_vehicle.css"/>
+  <script src="https://kit.fontawesome.com/9fee6bc438.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="top-section">
+      <h1>Current Vehicle :</h1>
+      <i class="fa-solid fa-circle-info info-icon"></i>
+    </div>
+
+    <div class="vehicle-image">
+      <img src="car.png" alt="Current Car"/>
+    </div>
+
+    <div class="arrow-controls">
+      <button class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <div class="form-box">
+      <label for="reg-plate">Vehicle</label>
+      <div class="input-with-icon">
+        <input type="text" id="reg-plate" placeholder="Registration plate"/>
+        <i class="fa-solid fa-pen edit-icon"></i>
+      </div>
+      <div class="action-buttons">
+        <button class="default-btn"><i class="fa-solid fa-circle-check"></i> Set as default</button>
+        <button class="remove-btn"><i class="fa-solid fa-circle-minus"></i> Remove Car</button>
+      </div>
+    </div>
+
+    <button class="add-btn"><i class="fa-solid fa-plus"></i> Add a Car</button>
+
+    <div class="bottom-buttons">
+      <button class="back-btn">Back</button>
+      <button class="select-btn">Select</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
