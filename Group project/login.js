@@ -3,6 +3,15 @@ function showForm(type) {
     document.getElementById("register-form").classList.remove("active");
     document.getElementById(`${type}-form`).classList.add("active");
     document.getElementById("message").textContent = "";
+
+    const buttons = document.querySelectorAll(".switch-buttons button");
+    buttons.forEach(btn => btn.classList.remove("active"));
+
+    if (type === "login") {
+        buttons[0].classList.add("active"); 
+    } else {
+        buttons[1].classList.add("active"); 
+    }
 }
 
 function login() {

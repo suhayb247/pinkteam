@@ -10,9 +10,9 @@
 
   <div class="login-box">
     <div class="switch-buttons">
-      <button onclick="showForm('login')">Login</button>
+      <button onclick="showForm('login')" class="active">Login</button>
       <button onclick="showForm('register')">Register</button>
-    </div>
+    </div>    
 
     <form id="login-form" class="active" onsubmit="return login()">
         <label>Name</label>
@@ -24,14 +24,14 @@
         <label>Password</label>
         <input type="password" id="login-password" required />
 
-        <button class="submit-btn" type="submit">Login</button>
 
         <div class="tos">
-            <i class="fa-solid fa-check"></i>
-            <p>
-            By registering, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
-            </p>
+          <input type="checkbox" required />
+          <p>
+            By logging in, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+          </p>
         </div>
+        <button class="submit-btn" type="submit">Login</button>
     </form>
 
 
@@ -49,8 +49,13 @@
         <label>Car License Plate</label>
         <input type="text" id="reg-plate" required />
 
-        <button class="submit-btn" type="submit">Register</button>
-
+        <div class="tos">
+          <input type="checkbox" required />
+          <p>
+            By registering, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+          </p>
+        </div>
+        <button class="submit-btn" type="submit">Login</button>
         
     </form>
 

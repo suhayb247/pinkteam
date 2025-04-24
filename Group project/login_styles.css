@@ -23,19 +23,25 @@ body{
   margin-bottom: 20px;
 }
 
-.switch-buttons button{
+.switch-buttons button {
   width: 48%;
   padding: 10px;
   font-size: 1rem;
   border: none;
-  background-color: rgb(60, 0, 172);
-  color: white;
+  background-color: #D3E1F3;
+  color: black;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.switch-buttons button.active {
+  background-color: #1a0941;
+  color: white;
 }
 
 .switch-buttons button:hover{
-  background-color: rgb(60, 0, 172);
+  background-color: #90befa;
 }
 
 form{
@@ -62,7 +68,7 @@ input{
 
 button.submit-btn{
   margin-top: 20px;
-  background-color: rgb(60, 0, 172);
+  background-color: #1a0941;
   color: white;
   border: none;
   padding: 10px;
@@ -72,7 +78,7 @@ button.submit-btn{
 }
 
 button.submit-btn:hover{
-  background-color: rgb(60, 0, 172);
+  background-color: #0d458d;
 }
 
 .msg{
@@ -90,21 +96,30 @@ button.submit-btn:hover{
   position: absolute;
 }
 
-.tos{
+
+.tos {
   font-size: 0.8rem;
   margin-top: 10px;
-  text-align: center;
+  margin-bottom: 10px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-
+  gap: 10px;
+  text-align: left;
 }
 
-.tos i{
-  font-size: 1.2rem;
-  margin-top: -10px;
-  margin-left: 3px;
+.tos {
+  font-size: 0.8rem;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tos input[type="checkbox"] {
+  accent-color: rgb(23, 54, 122);
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
 
 .other-logins{
@@ -119,7 +134,7 @@ button.submit-btn:hover{
 
 .other-logins i{
   font-size: 2rem;
-  color: rgb(60, 0, 172);
+  color: #1a0941;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
