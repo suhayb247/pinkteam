@@ -8,10 +8,16 @@ body {
     align-items: center;
     padding: 20px;
     width: 100%;
-    height: 140vh;
+    height: auto; 
     overflow: auto;
 
-    
+}
+
+.title {
+    text-align: center; 
+    margin: 20px 0; 
+    font-size: 2rem; 
+    font-weight: bold; 
 }
 
 h1 {
@@ -19,9 +25,9 @@ h1 {
 }
 
 .map-box {
-    width: 90%;
-    max-width: 70%;
-    height: 30%;
+    width: 90%; 
+    max-width: 90%; 
+    height: 60vh; 
     border: 1px solid #ccc;
     border-radius: 8px;
     overflow: hidden;
@@ -47,14 +53,6 @@ iframe {
     border: 0;
 }
 
-.page h1 {
-    margin: 0;
-    padding: 20px;
-    font-size: 3rem;
-    text-align: center;
-    color: #333;
-}
-
 .selection {
     width: 90%;
     max-width: 600px;
@@ -63,12 +61,12 @@ iframe {
     border-radius: 20px;
 }
 
-  .selection .buttons {
+.selection .buttons {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-  
+
 .selection button {
     background: #d3e1f3;
     color: #1a0941;
@@ -80,25 +78,24 @@ iframe {
     align-items: center;
     text-align: left;
     width: 100%;
+    border: none;
 }
-  
+
 .selection .info h3 {
     margin: 0;
     font-size: 1.1rem;
     cursor: pointer;
-
 }
-  
+
 .selection .info h4 {
     margin: 5px 0 0;
     font-size: 0.9rem;
     font-weight: normal;
 }
-  
+
 .selection .bookmark {
     font-size: 1.5rem;
     cursor: pointer;
-
 }
 
 .queries {
@@ -108,11 +105,10 @@ iframe {
     gap: 10px;
     margin-top: 20px;
     width: 90%;
-    max-width: 80%;  
+    max-width: 80%;
     margin-right: 50%;
     margin-left: 50%;
     transform: translateX(-50%);
-
 }
 
 .favourites-button {
@@ -133,11 +129,6 @@ iframe {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-* {
-    border: none;
-}
-
-
 .navbar {
     background-color: #f5f5f5;
     overflow: hidden;
@@ -153,9 +144,9 @@ iframe {
     display: flex;
     justify-content: space-evenly;
     height: 7vh;
-  }
-  
-  .navbar button {
+}
+
+.navbar button {
     background-color: #f5f5f5;
     color: #1a0941;
     border: none;
@@ -168,31 +159,28 @@ iframe {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  .navbar i {
+}
+
+.navbar i {
     font-size: 22px;
     margin-bottom: 1px;
-  }
-  
-  .nav-item {
+}
+
+.nav-item {
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
+}
 
 .underlined {
     text-decoration: underline;
 }
 
-
-
-
 .overlay {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0,0.6);
@@ -200,15 +188,15 @@ iframe {
     justify-content: center;
     align-items: center;
     z-index: 999;
-  }
-  
-  .overlay-box {
+}
+
+.overlay-box {
     background: white;
     padding: 20px;
     border-radius: 10px;
-  }
-  
-  .carpark-button {
+}
+
+.carpark-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -222,7 +210,7 @@ iframe {
 }
 
 .carpark-button .info {
-    flex: 1; 
+    flex: 1;
 }
 
 .carpark-button .icons {
@@ -241,17 +229,13 @@ iframe {
     cursor: pointer;
 }
 
-.carpark-button .icons i:hover,
-.carpark-button .bookmark i:hover {
-    color: #e34e2f;
-}
 
 .carpark-button .bookmark {
     margin-left: 20px;
 }
 
 .carpark-button .icons i:hover {
-    color: #e34e2f;
+    color: #1b3794;
 }
 
 .carpark-button .icons {
@@ -262,19 +246,44 @@ iframe {
     gap: 15px;
 }
 
-
-  @media (max-width: 500px) {
+@media (max-width: 500px) {
+    body {
+        padding: 10px; 
+    }
     .selection button {
-      flex-direction: column;
-      align-items: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
     }
-  
+
     .selection .bookmark {
-      align-self: flex-end;
-      margin-top: 5px;
+        align-self: flex-end;
+        margin-top: 5px;
     }
-  }
-  
 
+    .queries {
+        flex-direction: column;
+        width: 100%;
+    }
 
+    .favourites-button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px;
+    }
 
+    .map-box {
+        width: 100%;
+        max-width: 100%;
+        height: 25vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .selection {
+        width: 80%;
+    }
+
+    .queries {
+        width: 90%;
+    }
+}
