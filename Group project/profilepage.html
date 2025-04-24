@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="profilepage.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+  <div class="profile-app">
+    
+
+    <main class="profile-main">
+      <div class="profile-header">
+        <div class="logo">P</div>
+        <div class="settings-icon">
+          <i class="bi bi-gear"></i>
+        </div>
+      </div>
+
+      <div class="avatar-section">
+        <div class="avatar-circle">
+          <i class="bi bi-person"></i>
+        </div>
+        <button class="edit-avatar"><i class="bi bi-pencil"></i></button>
+      </div>
+
+      <div class="card">
+        <h3>Personal details</h3>
+        <input type="text" placeholder="Full Name" disabled>
+        <input type="email" placeholder="Email" disabled>
+        <input type="tel" placeholder="Phone number" disabled>
+        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+      </div>
+
+      <div class="card">
+        <h3>Saved Payment Methods</h3>
+        <div class="payment-method">
+          <span>Visa **** 1234</span>
+          <small>Expires 09/2027</small>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" class="card-logo">
+          <button class="delete-card" style="display: none;"><i class="bi bi-trash"></i></button>
+        </div>
+        <div class="payment-method">
+          <span>Master **** 6554</span>
+          <small>Expires 02/2027</small>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg" alt="Mastercard" class="card-logo">
+          <button class="delete-card" style="display: none;"><i class="bi bi-trash"></i></button>
+        </div>
+        <button class="edit-btn"><i class="bi bi-pencil"></i></button>
+      </div>
+
+      <div class="card">
+        <h3>Billing History</h3>
+        <div class="billing-row">
+          <span>02/03/25</span>
+          <span>£5.00</span>
+        </div>
+        <div class="billing-row">
+          <span>04/02/25</span>
+          <span>£5.00</span>
+        </div>
+      </div>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="#"><i class="bi bi-house"></i><span>Home</span></a>
+      <a href="#"><i class="bi bi-search"></i><span>Search</span></a>
+      <a href="#"><i class="bi bi-calendar2-check"></i><span>Bookings</span></a>
+      <a href="#" class="active"><i class="bi bi-person"></i><span>Account</span></a>
+    </nav>
+  </div>
+
+  <script src="profilepage.js"></script>
+
+
+  <div class="settings-modal" id="settingsModal">
+    <span class="close-btn" id="closeSettings">&times;</span>
+    <h2>Settings</h2>
+    <div class="toggle-option">
+      <label>Allow Notifications <input type="checkbox" id="toggleNotifications" /></label>
+      <label>Allow Location <input type="checkbox" id="toggleLocation" /></label>
+    </div>
+    <div class="section-title arrow-link" id="helpSection">
+      Help & Support <span>&#x2192;</span>
+    </div>
+    <div class="sub-option">FAQ</div>
+    <div class="sub-option">Report an Issue</div>
+    <div class="section-title arrow-link" id="privacySection">
+      Privacy Settings <span>&#x2192;</span>
+    </div>
+    <div class="sub-option">Privacy Policy</div>
+    <div class="sub-option">Control Data Sharing</div>
+    <div class="text-size-option">
+      <div class="section-title">Text Size</div>
+      <label><input type="radio" name="textSize" value="14" checked /> 14</label>
+      <label><input type="radio" name="textSize" value="16" /> 16</label>
+      <label><input type="radio" name="textSize" value="20" /> 20</label>
+    </div>
+    <div class="logout">Logout</div>
+  </div>  
+
+ 
+  <div class="confirm-modal" id="confirmModal">
+    <div class="confirm-box">
+      <p>Are you sure you want to delete this payment method?</p>
+      <div class="confirm-actions">
+        <button id="confirmYes">Yes</button>
+        <button id="confirmNo">No</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
