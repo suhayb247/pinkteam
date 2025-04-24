@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Settings</title>
+  <link rel="stylesheet" href="privacy.css" />
+</head>
+<body>
+  <div class="privacy-container">
+    <div class="header">
+      <a href="profilepage.html" class="back-arrow">&#8592;</a>
+      <h1>Privacy Settings</h1>
+    </div>
+
+    <div class="card">
+      <h3>Settings</h3>
+      <div class="toggle-option">
+        <div>
+          <strong>Location Access</strong>
+          <p>Real-time location tracking for finding nearby parking.</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="toggleLocation" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="toggle-option">
+        <div>
+          <strong>Usage Analytics</strong>
+          <p>Sharing app usage data for improving features.</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="toggleData" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="toggle-option">
+        <div>
+          <strong>Third-Party Integrations</strong>
+          <p>Manage sharing data with payment providers or navigation apps.</p>
+        </div>
+        <label class="switch">
+          <input type="checkbox" id="toggleAnalytics" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Privacy Policy</h3>
+      <ul class="policy-points">
+        <li>🔹 <strong>What Data We Collect</strong>  Name, email, phone number, payment details, location, car details.</li>
+        <li>🔹 <strong>How We Use Your Data</strong>  To provide parking services, process payments, and improve the app.</li>
+        <li>🔹 <strong>Who We Share Data With</strong>  Payment processors, mapping services, and third-party advertisers.</li>
+        <li>🔹 <strong>How We Protect Your Data</strong>  Encryption, secure storage, and compliance with legal standards.</li>
+        <li>🔹 <strong>User Rights</strong> How users can access, update, or delete their data.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="privacy.js"></script>
+</body>
+</html>

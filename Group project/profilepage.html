@@ -23,7 +23,6 @@
         <div class="avatar-circle">
           <i class="bi bi-person"></i>
         </div>
-        <button class="edit-avatar"><i class="bi bi-pencil"></i></button>
       </div>
 
       <div class="card">
@@ -65,7 +64,7 @@
     </main>
 
     <nav class="bottom-nav">
-      <a href="#"><i class="bi bi-house"></i><span>Home</span></a>
+      <a href="index.html"><i class="bi bi-house"></i><span>Home</span></a>
       <a href="#"><i class="bi bi-search"></i><span>Search</span></a>
       <a href="#"><i class="bi bi-calendar2-check"></i><span>Bookings</span></a>
       <a href="#" class="active"><i class="bi bi-person"></i><span>Account</span></a>
@@ -79,17 +78,28 @@
     <span class="close-btn" id="closeSettings">&times;</span>
     <h2>Settings</h2>
     <div class="toggle-option">
-      <label>Allow Notifications <input type="checkbox" id="toggleNotifications" /></label>
-      <label>Allow Location <input type="checkbox" id="toggleLocation" /></label>
+      <label class="switch-label">Allow Notifications
+        <label class="switch">
+          <input type="checkbox" id="toggleNotifications">
+          <span class="slider"></span>
+        </label>
+      </label>
+      
+      <label class="switch-label">Allow Location
+        <label class="switch">
+          <input type="checkbox" id="toggleLocation">
+          <span class="slider"></span>
+        </label>
+      </label>
     </div>
     <a href="helpandsupport.html" class="section-title arrow-link" id="helpSection">
         Help & Support <span class="arrow-icon">&#x2192;</span>
       </a>      
     <div class="sub-option">FAQ</div>
     <div class="sub-option">Report an Issue</div>
-    <div class="section-title arrow-link" id="privacySection">
-      Privacy Settings <span>&#x2192;</span>
-    </div>
+    <a href="privacy.html" class="section-title arrow-link" id="privacySection">
+      Privacy Settings <span class="arrow-icon">&#x2192;</span>
+    </a>
     <div class="sub-option">Privacy Policy</div>
     <div class="sub-option">Control Data Sharing</div>
     <div class="text-size-option">

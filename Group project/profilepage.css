@@ -244,9 +244,59 @@
     margin: 10px 0;
   }
   
-  .toggle-option input[type="checkbox"] {
-    transform: scale(1.2);
+  .switch-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 1rem;
   }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #b6d4fa;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.3s;
+  }
+  
+  .slider::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    left: 3px;
+    bottom: 3px;
+    transition: 0.3s;
+  }
+  
+  input:checked + .slider {
+    background-color: #1a0941;
+  }
+  
+  input:checked + .slider::before {
+    transform: translateX(20px);
+  }
+  
   
   .sub-option {
     font-size: 0.9rem;
