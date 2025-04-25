@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking.css">
+    <script src="booking.js" defer></script>
 </head>
 <body>
-    
+    <h1 class="page-title">Booking</h1>
+
+    <div class="booking-form">
+        <form action="#" method="POST">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter location" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="duration">Duration (hours):</label>
+            <input type="number" id="duration" name="duration" min="1" required>
+
+            <button type="submit" class="submit-button">Book Now</button>
+        </form>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html" class="nav-item">
+            <button class="home-navbar">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </button>
+        </a>
+        
+        <a href="map.html" class="nav-item">
+            <button class="map-navbar">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>Map</span>
+            </button>
+        </a>
+        
+        <a href="bookings.html" class="nav-item">
+            <button class="bookings-navbar">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Bookings</span>
+            </button>
+        </a>
+        
+        <a href="profilepage.html" class="nav-item">
+            <button class="account-navbar">
+                <i class="fa-solid fa-user-pen"></i>
+                <span>Account</span>
+            </button>
+        </a>
+    </div>
+
+    <script src="https://kit.fontawesome.com/9fee6bc438.js" crossorigin="anonymous"></script>
 </body>
 </html>
