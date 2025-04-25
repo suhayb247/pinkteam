@@ -32,72 +32,62 @@
             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4707.435515319566!2d-1.551345919108622!3d53.795038720353155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sleeds%20car%20parks!5e0!3m2!1sen!2suk!4v1713445828050!5m2!1sen!2suk" 
             allowfullscreen 
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            referrerpolicy="no-referrer-when-downgrade"
+            id="map-iframe">
         </iframe>
         </div>
         <div class="queries">
-            <div class="selection">
+            <div class="query-buttons">
                 <h2>Find a parking space</h2>
-                <div class="buttons">
-                    <button class="carpark-button">
-                        <div class="info" id="query-title">
-                            <h3>West Street Car Park</h3>
-                            <h4>14 Reviews • 0.3 miles</h4>
-                            <h4>£3.00 per hour</h4>
-                            <h4 class="underlined">View Details</h4>
-                            <button class="park-now-btn">Park Now</button>
-                        </div>
-                        <div class="icons">
+                <div class="query-button-box">
+                    <button class="query-button">
+                        <h3 class="query-title">West Street Car Park</h3>
+                        <h4 class="query-reviews-distance">4.0 (14) • 0.3 miles</h4>
+                        <h4 class="query-price">£3.00 per hour</h4>
+                        <div class="query-features">
                             <i class="fa-solid fa-wheelchair" title="Disabled Friendly"></i>
-                            <i class="fa-solid fa-plug" title="EV Charging Available"></i>
-                            <div class="bookmark">
-                                <i class="fa-regular fa-bookmark" title="Save"></i>
-                            </div>
                         </div>
                     </button>
-                
-                    <button class="carpark-button">
-                        <div class="info" id="query-title">
-                            <h3>Leeds Parking Garage</h3>
-                            <h4>22 Reviews • 0.5 miles</h4>
-                            <h4>£5.50 per hour</h4>
-                            <h4 class="underlined">View Details</h4>
-                            <button class="park-now-btn">Park Now</button>
-                        </div>
-                        <div class="icons">
-                            <i class="fa-solid fa-wheelchair" title="Disabled Friendly"></i>
-                            <i class="fa-solid fa-plug" title="EV Charging Available"></i>
-                            <div class="bookmark">
-                                <i class="fa-regular fa-bookmark" title="Save"></i>
-                            </div>
-                        </div>
+                    <a href="#" class="query-details-button">View Details 
+                        <i class="fa-regular fa-bookmark save-icon" title="Save"></i>
+                    </a>
+                    
+                </div>
+
+                <div class="query-button-box">
+                    <button class="query-button">
+                        <h3 class="query-title">Leeds Parking Garage</h3>
+                        <h4 class="query-reviews-distance">2.5 (19) • 0.5 miles</h4>
+                        <h4 class="query-price">£9.00 per hour</h4>
                     </button>
-            
+                    <a href="#" class="query-details-button">View Details 
+                        <i class="fa-regular fa-bookmark save-icon" title="Save"></i>
+                    </a>
+                    
                 </div>
             </div>
-            <div class="selection">
+
+            <div class="query-buttons">
                 <h2>Saved Locations</h2>
-                <div class="buttons">
-                    <button class="carpark-button">
-                        <div class="info" id="query-title">
-                            <h3>East Street Car Park</h3>
-                            <h4>15 Reviews • 0.2 miles</h4>
-                            <h4>£4.00 per hour</h4>
-                            <h4 class="underlined">View Details</h4>
-                            <button class="park-now-btn">Park Now</button>
-                        </div>
-                        <div class="icons">
+                <div class="query-button-box">
+                    <button class="query-button">
+                        <h3 class="query-title">East Street Car Park</h3>
+                        <h4 class="query-reviews-distance">4.5 (10) • 0.2 miles</h4>
+                        <h4 class="query-price">£4.00 per hour</h4>
+                        <div class="query-features">
                             <i class="fa-solid fa-wheelchair" title="Disabled Friendly"></i>
                             <i class="fa-solid fa-plug" title="EV Charging Available"></i>
-                            <div class="bookmark">
-                                <i class="fa-solid fa-bookmark" title="Save"></i>
-                            </div>
                         </div>
                     </button>
+                    <a href="#" class="query-details-button">View Details 
+                        <i class="fa-solid fa-bookmark save-icon" title="Save"></i>
+                    </a>
+                </div>
                 </div>
             </div>
           </div>
         </div>
+
 
     <div class="navbar">
         <button class="home.navbar" onclick="location.href='index.html'">
@@ -122,12 +112,7 @@
     </div>
 
 
-    <div id="overlay" class="overlay">
-        <div class="overlay-box">
-          <p>aaa</p>
-          <button onclick="hideOverlay()">bye bye</button>
-        </div>
-      </div>
+
       
     
 
