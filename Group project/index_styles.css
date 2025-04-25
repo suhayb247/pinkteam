@@ -184,11 +184,13 @@
     margin-top: 5vh;
 }
 
-.secondary-buttons button {
-    background: #d3e1f3; /* Light background */
-    color: #1a0941;      /* Dark text for contrast */
+/* Styles for both <button> and <a> */
+.secondary-buttons button,
+.secondary-buttons a {
+    background: #d3e1f3;  /* Light background */
+    color: #1a0941;       /* Dark text for contrast */
     border: none;
-    padding: 10px 20px;  /* Matching padding */
+    padding: 10px 20px;   /* Matching padding */
     font-size: 16px;
     cursor: pointer;
     display: flex;
@@ -198,20 +200,25 @@
     margin: 0 10px;
     border-radius: 20px;  /* Rounded corners */
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
-    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transitions */
-    min-width: 180px;  /* Keeps button size consistent */
-    gap: 10px; /* Space between icon and text */
+    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
+    min-width: 180px;
+    gap: 10px;            /* Space between icon and text */
+    text-decoration: none; /* Removes underline from <a> */
 }
 
-.secondary-buttons button:hover {
-    background: #0d458d; /* Darker background on hover */
-    color: white;         /* White text on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+/* Hover effects for both */
+.secondary-buttons button:hover,
+.secondary-buttons a:hover {
+    background: #0d458d;
+    color: white;
+    transform: scale(1.05);
 }
 
-.secondary-buttons button i {
-    font-size: 22px;  /* Larger icon size */
-    margin: 0;         /* Removes margin from icons */
+/* Icon size for both */
+.secondary-buttons button i,
+.secondary-buttons a i {
+    font-size: 22px;
+    margin: 0;
 }
 
 .no-underline {
@@ -357,3 +364,20 @@
     }
     
 }   
+
+.nav-button {
+    display: inline-block;
+    background-color: #2e1449;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: #5f4b8b;
+  }
