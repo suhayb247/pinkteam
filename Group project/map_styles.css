@@ -279,6 +279,15 @@ iframe {
     background-color: #0e19bb;
 }
 
+.park-btn, .book-btn {
+    width: 100%;
+    padding: 6px 0;
+    margin: 4px 0;
+    border: 2px solid #1a0941;
+    border-radius: 4px;
+    background: white;
+    font-weight: bold;
+  }
 
 @media (max-width: 500px) {
     body {
