@@ -28,3 +28,13 @@ const defaultBtn = document.getElementById('defaultBtn');
 defaultBtn.addEventListener('click', () => {
   defaultBtn.classList.toggle('active');
 });
+
+// Function to show the overlay
+function showInfoOverlay() {
+    document.getElementById('info-overlay').style.display = 'flex';
+  }
+  
+  // Function to close the overlay
+  function closeInfoOverlay() {
+    document.getElementById('info-overlay').style.display = 'none';
+  }
