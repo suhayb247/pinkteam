@@ -53,54 +53,12 @@ iframe {
     border: 0;
 }
 
-.selection {
-    width: 90%;
-    max-width: 600px;
-    margin: 2vh auto;
-    text-align: center;
-    border-radius: 20px;
-}
 
-.selection .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
 
-.selection button {
-    background: #d3e1f3;
-    color: #1a0941;
-    border-radius: 20px;
-    padding: 15px 20px;
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-    width: 100%;
-    border: none;
-}
-
-.selection .info h3 {
-    margin: 0;
-    font-size: 1.1rem;
-    cursor: pointer;
-}
-
-.selection .info h4 {
-    margin: 5px 0 0;
-    font-size: 0.9rem;
-    font-weight: normal;
-}
-
-.selection .bookmark {
-    font-size: 1.5rem;
-    cursor: pointer;
-}
 
 .queries {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     gap: 10px;
     margin-top: 20px;
@@ -109,25 +67,9 @@ iframe {
     margin-right: 50%;
     margin-left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 100px;
 }
 
-.favourites-button {
-    background: #1a0941;
-    color: rgb(18, 19, 85);
-    border: none;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2vh;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-}
 
 .navbar {
     background-color: #f5f5f5;
@@ -177,74 +119,8 @@ iframe {
     text-decoration: underline;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.6);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
-
-.overlay-box {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.carpark-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #d3e1f3;
-    color: #1a0941;
-    border-radius: 20px;
-    padding: 15px 20px;
-    font-size: 16px;
-    width: 100%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.carpark-button .info {
-    flex: 1;
-}
-
-.carpark-button .icons {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.carpark-button .icons i {
-    font-size: 1.5rem;
-    color: #1a0941;
-}
-
-.carpark-button .bookmark {
-    font-size: 1.5rem;
-    cursor: pointer;
-}
 
 
-.carpark-button .bookmark {
-    margin-left: 20px;
-}
-
-.carpark-button .icons i:hover {
-    color: #1b3794;
-}
-
-.carpark-button .icons {
-    margin-left: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-}
 .search-bar {
     display: flex;
     justify-content: center;
@@ -280,18 +156,117 @@ iframe {
 }
 
 
+.query-button {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background: #d3e1f3;
+    color: #1a0941;
+    border-radius: 10px 10px 0px 0px;
+    padding: 15px 20px;
+    font-size: 16px;
+    width: 100%;
+    border: 0;
+    
+}
+
+.query-button h3,
+.query-button h4,
+.query-button a {
+    text-decoration: none;
+    color: #1a0941;
+    margin: 0;
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+
+
+.query-button h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.save-icon{
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #1a0941;
+    margin-right: 20px;
+}
+
+
+.query-details-button{
+    background: #d3e1f3;
+    color: #1a0941;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0px 0px 15px 0px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    border: none;
+    width: 100%;
+    text-decoration: underline;
+    text-indent: 20px;
+}
+
+.query-button-box{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.query-features{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 7px;
+    align-self: flex-start;
+}
+
+.query-buttons {
+    width: 90%;
+    max-width: 600px;
+    margin: 2vh auto;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.park-now{
+    background: #ffffff00;
+    color: #1a0941;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+
+
 @media (max-width: 500px) {
     body {
         padding: 10px; 
-    }
-    .selection button {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .selection .bookmark {
-        align-self: flex-end;
-        margin-top: 5px;
     }
 
     .queries {
@@ -310,14 +285,85 @@ iframe {
         max-width: 100%;
         height: 25vh;
     }
+
+
+    .query-button h3 {
+        font-size: 1.2rem;
+    }
+
+    .query-button h4 {
+        font-size: 1rem;
+    }
+
+    .query-button a {
+        font-size: 0.9rem;
+    }
+
+    .query-details-button,
+    .query-button {
+        font-size: 14px;
+        width: 150%;
+        align-self: center;
+    }
+
+    .query-features {
+        font-size: 1.2rem;
+    }
+
+    .query-buttons {
+        width: 100%;
+        max-width: 100%;
+        margin: 2vh auto;
+        text-align: center;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
 }
 
 @media (max-width: 768px) {
-    .selection {
-        width: 80%;
-    }
 
     .queries {
         width: 90%;
+    }
+    .query-button h3 {
+        font-size: 1.5rem;
+    }
+    .query-button h4 {
+        font-size: 1.2rem;
+    }
+    .query-button a {
+        font-size: 1rem;
+    }
+    .query-details-button,
+    .query-button {
+        font-size: 16px;
+        width: 130%;
+        align-self: center;
+    }
+    .query-features {
+        font-size: 1.5rem;
+    }
+    .query-buttons {
+        width: 100%;
+        max-width: 100%;
+        margin: 2vh auto;
+        text-align: center;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-bar {
+        width: 100%;
+        max-width: 100%;
     }
 }
