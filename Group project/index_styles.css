@@ -185,35 +185,34 @@
 }
 
 .secondary-buttons button {
-    background: rgba(0, 116, 224, 0.616);
-    color: rgb(16, 15, 110);
+    background: #d3e1f3; /* Light background */
+    color: #1a0941;      /* Dark text for contrast */
     border: none;
-    padding: 15px 25px;
-    text-align: center;
+    padding: 10px 20px;  /* Matching padding */
     font-size: 16px;
     cursor: pointer;
     display: flex;
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: center; 
+    flex-direction: row;
+    align-items: center;  /* Aligns icon and text vertically */
+    justify-content: center;
     margin: 0 10px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-    gap: 10px; 
-    min-width: 180px;
-}
-
-.secondary-buttons button i {
-    font-size: 22px;
-    margin: 0; 
+    border-radius: 20px;  /* Rounded corners */
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);  /* Subtle shadow */
+    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transitions */
+    min-width: 180px;  /* Keeps button size consistent */
+    gap: 10px; /* Space between icon and text */
 }
 
 .secondary-buttons button:hover {
-    background: rgba(34, 12, 133, 0.8);
-    transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
-    transform: scale(1.05);
+    background: #0d458d; /* Darker background on hover */
+    color: white;         /* White text on hover */
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
+.secondary-buttons button i {
+    font-size: 22px;  /* Larger icon size */
+    margin: 0;         /* Removes margin from icons */
+}
 
 .no-underline {
     text-decoration: none;

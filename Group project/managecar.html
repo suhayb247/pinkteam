@@ -13,38 +13,60 @@
 
     <div class="top-section">
       <h1>Current Vehicle :</h1>
-      <i class="fa-solid fa-circle-info info-icon"></i>
+      <i class="fa-solid fa-circle-info info-icon" onclick="showInfoOverlay()"></i>
     </div>
 
     <div class="vehicle-image">
-      <img src="https://media.istockphoto.com/id/1150425295/photo/3d-illustration-of-generic-hatchback-car-perspective-view.jpg?s=612x612&w=0&k=20&c=vws8oDFjcfGpqNAybWPxsA9XROdcBh2MXW2PGEDgk-8=" alt="Current Car"/>
+      <img id="vehicle-img" src="https://media.istockphoto.com/id/1150425295/photo/3d-illustration-of-generic-hatchback-car-perspective-view.jpg?s=612x612&w=0&k=20&c=vws8oDFjcfGpqNAybWPxsA9XROdcBh2MXW2PGEDgk-8=" alt="Current Car"/>
     </div>
 
     <div class="arrow-controls">
-      <button class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
-      <button class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      <button class="arrow-btn" onclick="changeImage('left')"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="arrow-btn" onclick="changeImage('right')"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 
     <div class="form-box">
       <label for="reg-plate">Vehicle</label>
       <div class="input-with-icon">
-        <input type="text" id="reg-plate" placeholder="Registration plate"/>
+        <input type="text" id="reg-plate" placeholder="Registration plate" />
         <i class="fa-solid fa-pen edit-icon"></i>
       </div>
       <div class="action-buttons">
-        <button class="default-btn"><i class="fa-solid fa-circle-check"></i> Set as default</button>
-        <button class="remove-btn"><i class="fa-solid fa-circle-minus"></i> Remove Car</button>
+        <button id="defaultBtn" class="default-btn">
+          <i class="fa-solid fa-circle-check"></i> Set as default
+        </button>
+        <button class="remove-btn">
+          <i class="fa-solid fa-circle-minus"></i> Remove Car
+        </button>
       </div>
     </div>
 
     <button class="add-btn"><i class="fa-solid fa-plus"></i> Add a Car</button>
 
     <div class="bottom-buttons">
-      <button class="back-btn">Back</button>
+      <a href="index.html" class="back-btn">Back</a>
       <button class="select-btn">Select</button>
     </div>
 
+    <div id="toast-message" class="toast-message">Action completed</div>
+
   </div>
+
+  <!-- Overlay for information -->
+  <div id="info-overlay" class="info-overlay">
+    <div class="info-content">
+      <h2>Information</h2>
+      <ul>
+        <li><strong>To edit your car:</strong> Tap to update its registration details.</li>
+        <li><strong>Set a car as default:</strong> Choose a default car for faster bookings.</li>
+        <li><strong>Remove a car:</strong> Delete a car if you no longer need it.</li>
+        <li><strong>Add a new car:</strong> Register another vehicle to switch between them.</li>
+      </ul>
+      <button onclick="closeInfoOverlay()" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="manage_vehicle.js"></script>
 
 </body>
 </html>
