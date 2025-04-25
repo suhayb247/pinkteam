@@ -11,13 +11,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     )
       
-document.querySelectorAll('.fa-bookmark').forEach(bookmark => {
-    bookmark.addEventListener('click', (e) => {
-        e.stopPropagation(); // Prevent triggering the parent button
-        bookmark.classList.toggle('fa-regular'); // Outline icon
-        bookmark.classList.toggle('fa-solid');  // Filled icon (saved)
-    });
-});
 
 document.getElementById("query-title").addEventListener("click", () => {
     document.getElementById("overlay").style.display = "flex"
