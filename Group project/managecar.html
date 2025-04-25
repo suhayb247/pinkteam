@@ -66,6 +66,22 @@
     </div>
   </div>
 
+  <!-- Add Car Form (Initially hidden) -->
+<div id="add-car-form" class="add-car-form">
+  <h2>Add a New Car</h2>
+  <label for="new-reg-plate">Registration Plate</label>
+  <input type="text" id="new-reg-plate" placeholder="Enter registration plate" required />
+  
+  <label for="new-car-model">Car Model</label>
+  <input type="text" id="new-car-model" placeholder="Enter car model" required />
+  
+  <label for="new-car-image">Upload Image (optional)</label>
+  <input type="file" id="new-car-image" accept="image/*" />
+  
+  <button id="submit-new-car" class="submit-btn">Add Car</button>
+  <button onclick="cancelAddCar()" class="cancel-btn">Cancel</button>
+</div>
+
   <script src="manage_vehicle.js"></script>
 
 </body>
