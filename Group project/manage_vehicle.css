@@ -175,3 +175,12 @@ body {
 .select-btn:hover {
   background-color: #a1a4b3;
 }
+
+/* Highlighted state for default selection */
+.default-btn.active {
+  background-color: #2e1449;
+  color: white;
+  border: 2px solid #2e1449;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}

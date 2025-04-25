@@ -21,3 +21,10 @@ const vehicleImages = [
     const vehicleImg = document.getElementById('vehicle-img');
     vehicleImg.src = vehicleImages[currentImageIndex];
   }
+
+  // Toggle "Set as default" button
+const defaultBtn = document.getElementById('defaultBtn');
+
+defaultBtn.addEventListener('click', () => {
+  defaultBtn.classList.toggle('active');
+});

@@ -28,13 +28,21 @@
 
     <div class="form-box">
       <label for="reg-plate">Vehicle</label>
+    
       <div class="input-with-icon">
-        <input type="text" id="reg-plate" placeholder="Registration plate"/>
+        <input type="text" id="reg-plate" placeholder="Registration plate" />
         <i class="fa-solid fa-pen edit-icon"></i>
       </div>
+    
       <div class="action-buttons">
-        <button class="default-btn"><i class="fa-solid fa-circle-check"></i> Set as default</button>
-        <button class="remove-btn"><i class="fa-solid fa-circle-minus"></i> Remove Car</button>
+        <!-- Added id to control the toggle in JS -->
+        <button id="defaultBtn" class="default-btn">
+          <i class="fa-solid fa-circle-check"></i> Set as default
+        </button>
+        
+        <button class="remove-btn">
+          <i class="fa-solid fa-circle-minus"></i> Remove Car
+        </button>
       </div>
     </div>
 
