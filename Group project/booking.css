@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,7 +14,7 @@ body {
     color: #444;
 }
 
-/* Booking form styles */
+
 .booking-form {
     max-width: 400px;
     margin: 20px auto;
