@@ -54,3 +54,59 @@ function showToast(message) {
     toast.classList.add('show');
     setTimeout(() => toast.classList.remove('show'), 2500);
 }
+
+// Show the Add Car Form
+document.querySelector('.add-btn').addEventListener('click', function() {
+    document.getElementById('add-car-form').style.display = 'flex';
+  });
+  
+  // Cancel and Hide the Add Car Form
+  function cancelAddCar() {
+    document.getElementById('add-car-form').style.display = 'none';
+  }
+  
+  // Submit the Add Car Form
+  document.getElementById('submit-new-car').addEventListener('click', function() {
+    const regPlate = document.getElementById('new-reg-plate').value;
+    const carModel = document.getElementById('new-car-model').value;
+    const carImageInput = document.getElementById('new-car-image');
+    const carImage = carImageInput.files.length > 0 ? URL.createObjectURL(carImageInput.files[0]) : "https://via.placeholder.com/150"; // Default image if none uploaded
+  
+    if (regPlate && carModel) {
+      // Create a new vehicle object and update the page
+      const newVehicleHTML = `
+        <div class="vehicle-card">
+          <img src="${carImage}" alt="New Car" class="vehicle-img"/>
+          <div class="vehicle-info">
+            <h3>${carModel}</h3>
+            <p>Registration: ${regPlate}</p>
+            <button onclick="setAsDefault()">Set as Default</button>
+            <button onclick="removeCar()">Remove Car</button>
+          </div>
+        </div>
+      `;
+  
+      // Append the new car details to the vehicle section (you can also update the current car display here)
+      document.querySelector('.container').insertAdjacentHTML('beforeend', newVehicleHTML);
+      
+      // Close the form after submission
+      document.getElementById('add-car-form').style.display = 'none';
+      document.getElementById('new-reg-plate').value = ''; // Clear form fields
+      document.getElementById('new-car-model').value = '';
+      carImageInput.value = ''; // Clear image field
+    } else {
+      alert("Please fill in all required fields.");
+    }
+  });
+
+  function setAsDefault() {
+    alert("This car is now set as your default vehicle.");
+    // Logic to highlight or mark the vehicle as default
+  }
+  
+  function removeCar() {
+    if (confirm("Are you sure you want to remove this vehicle?")) {
+      // Logic to remove the vehicle from the list
+      alert("Vehicle removed successfully.");
+    }
+  }
