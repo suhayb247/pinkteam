@@ -17,12 +17,13 @@
     </div>
 
     <div class="vehicle-image">
-      <img src="https://media.istockphoto.com/id/1150425295/photo/3d-illustration-of-generic-hatchback-car-perspective-view.jpg?s=612x612&w=0&k=20&c=vws8oDFjcfGpqNAybWPxsA9XROdcBh2MXW2PGEDgk-8=" alt="Current Car"/>
+      <!-- Adding id to target the image element -->
+      <img id="vehicle-img" src="https://media.istockphoto.com/id/1150425295/photo/3d-illustration-of-generic-hatchback-car-perspective-view.jpg?s=612x612&w=0&k=20&c=vws8oDFjcfGpqNAybWPxsA9XROdcBh2MXW2PGEDgk-8=" alt="Current Car"/>
     </div>
 
     <div class="arrow-controls">
-      <button class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
-      <button class="arrow-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      <button class="arrow-btn" onclick="changeImage('left')"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="arrow-btn" onclick="changeImage('right')"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
 
     <div class="form-box">
@@ -45,6 +46,8 @@
     </div>
 
   </div>
+
+  <script src="manage_vehicle.js"></script>
 
 </body>
 </html>
