@@ -66,10 +66,11 @@
     </div>
   </div>
 
-  <!-- Add Car Form (Initially hidden) -->
 <div id="add-car-form" class="add-car-form">
-  <h2>Add a New Car</h2>
-  <label for="new-reg-plate">Registration Plate</label>
+  <div class="inputs">
+
+    <h2>Add a New Car</h2>
+    <label for="new-reg-plate">Registration Plate</label>
   <input type="text" id="new-reg-plate" placeholder="Enter registration plate" required />
   
   <label for="new-car-model">Car Model</label>
@@ -80,6 +81,7 @@
   
   <button id="submit-new-car" class="submit-btn">Add Car</button>
   <button onclick="cancelAddCar()" class="cancel-btn">Cancel</button>
+</div>
 </div>
 
   <script src="manage_vehicle.js"></script>
